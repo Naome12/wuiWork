@@ -1,0 +1,159 @@
+*{
+    margin:30px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    top: 0;
+}
+
+.text2{
+    padding-top: 20px;
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.text1 {
+    background: linear-gradient(to right, #6b0680, #43c8cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 20px;
+    font-size: 100px;
+    font-weight: bold;
+  }
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+li{
+    list-style-type: none;
+    margin-top:50px ;
+}
+li a{
+    font-size: large;
+    color: black;
+    transition: text-decoration 1s,font-size 2s,color 1s ease-in-out;
+}
+a{
+    text-decoration: none;
+}
+.lists ul{
+    font-family: sans-serif;
+    font-size:x-large;
+    border: none;
+    background-color: rgb(228, 231, 233);
+    box-shadow: inset;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+li a:hover{
+text-decoration: underline;
+font-size: x-large;
+cursor: pointer;
+color: rgb(255, 153, 0);
+}
+li a:visited{
+    color: rgb(209, 30, 222);
+}
+
+.book{
+    display: flex;
+}
+.trends{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   transition:width 4s,height 2s ease-in;
+   transition-delay: 3s;
+}
+.trends div img:hover{
+    width: 350px;
+    height: 320px;
+}
+
+/* publication page list */
+.publication{
+    text-align: center;
+}
+table{
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+}
+th{
+    font-size: 25px;
+    font-weight: bold;
+}
+td{
+    font-size: 25px;
+    padding: 5px;
+}
+tr,th,td{
+    border: 1px solid black;
+}
+
+/* publication details page */
+
+.author img{
+    border: none;
+    border-radius: 50%;
+    height: 300px;
+}
+.author{
+    display: flex;
+    font-size: x-large;
+}
+
+.download{
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    width: 100px;
+    padding: 6px;
+    background-color: rgb(28, 197, 28);
+    color: white;
+}
+footer{
+    bottom: 0;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+  }
+  footer p{
+    text-align: center;
+    padding: 20px;
+  }
+
+@media (max-width: 950px) {
+    .book img {
+      max-width: 40%;
+    }
+  
+    .trends {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    h1 {
+        font-size: 24px;
+      }
+    
+      table {
+        font-size: 14px;
+      }
+    
+      th, td {
+        padding: 5px;
+      }
+      .author {
+        flex-direction: column;
+      }
+    
+      .author img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+  }
+
+  
